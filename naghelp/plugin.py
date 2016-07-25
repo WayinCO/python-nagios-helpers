@@ -1150,8 +1150,6 @@ class ActivePlugin(Plugin):
         except Exception,e:
             self.error('Plugin internal error : %s' % e, exception=e)
 
-        self.error('Should never reach this point')
-
 def datetime_handler(obj):
     if isinstance(obj, (datetime.datetime,datetime.date)):
         return obj.isoformat()
